@@ -1,0 +1,60 @@
+<template>
+  <section class="text-gray-400 body-font ml-auto mr-auto w-2/5 md:w-4/5">
+    <div
+      class="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center"
+    >
+      <div class="md:w-2/6 w-5/6 md:mb-0 mb-10">
+        <img
+          class="object-cover object-center rounded-full"
+          alt="hero"
+          src="../assets/images/WebProfile.jpg"
+        />
+      </div>
+      <div
+        class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
+      >
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+          Let's Talk Code.
+        </h1>
+        <p class="mb-8 leading-relaxed">
+          I'm a software engineering student, a freelancer, an avid gamer, and a
+          writer.
+          <br/>
+          I specialize in creating Android Applications, designing websites and developing backend infrastructure. I am currently enrolled in <a href="https://www.uetmardan.edu.pk/uetm/" target="_blank" class="text-blue-300">University of Engineering and Technology, Mardan.</a>
+        </p>
+
+        <NumText />
+        <div class="flex justify-center">
+          <a href="/resume.pdf">
+            <button
+              class="inline-flex border-2 border-blue-500 text-white bg-blue-900 border-0 py-2 px-6 focus:outline-none hover:bg-blue-500 rounded-full text-lg"
+            >
+              Résumé <fa icon="file" class="my-auto ml-2" />
+            </button>
+          </a>
+          <a href="https://wa.link/xxtajd" target="_blank">
+            <button
+              class="inline-flex ml-4 border-2 border-green-500 text-white bg-green-900 border-0 py-2 px-6 focus:outline-none hover:bg-green-500 rounded-full text-lg"
+            >
+              Contact <fa :icon="['fab', 'whatsapp']" class="my-auto ml-2" />
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style scoped>
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+</style>
